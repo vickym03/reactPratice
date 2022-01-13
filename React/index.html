@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+
+<body>
+    <div></div>
+    <p id="para"> </p>
+    <div id="italic"></div> <br>
+    <div  id="btn"></div>
+    <div id="tb">  </div>
+    <div id="in"></div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+        const reactElement = React.createElement('h1', {
+            id:"container",
+            className:"test"
+        }, 'Welcome to react JS')
+        
+        console.log(reactElement)
+        ReactDOM.render(reactElement, document.getElementById('container'))
+
+        const reactElement1 = React.createElement('b', null, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, exercitationem deleniti vero velit minima quod enim magni libero perferendis, eos veniam sequi reprehenderit')
+        ReactDOM.render(reactElement1, document.getElementById('para'))
+
+        const reactElement2 = React.createElement('i', null, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, exercitationem deleniti vero velit minima quod enim magni libero perferendis, eos veniam sequi reprehenderit')
+        ReactDOM.render(reactElement2, document.getElementById('italic'))
+
+        const reactElement3 = React.createElement('button', null, 'save')
+        ReactDOM.render(reactElement3, document.getElementById('btn'))
+
+        const reactElement4 = React.createElement('select', null, 'save select')
+        ReactDOM.render(reactElement4, document.getElementById('tb'))
+
+        const reactElement5 = React.createElement('input', null, '  ')
+        ReactDOM.render(reactElement5, document.getElementById('in').innerHTML="kite")
+
+    </script>
+</body>
+
+</html>

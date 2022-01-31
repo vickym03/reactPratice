@@ -1,0 +1,26 @@
+===============================================================================
+With JWT 
+===============================================================================
+
+1. https://ty-shop-token.herokuapp.com/api/users/login POST
+
+req body:
+{
+   'email': '',
+   'password': ''
+}
+
+2. https://ty-shop-token.herokuapp.com/api/users/register POST
+
+fullName : Satyam
+email:ty@gmail.com
+password:ty@123
+role:admin
+
+
+{
+"fullName" : "Satyam",
+"email":"fresh@gmail.com",
+"password":"fresh@123",
+"role":"admin"
+}

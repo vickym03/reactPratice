@@ -2,7 +2,7 @@ class LifeCycleComponent extends React.Component {
 
     constructor(props) {
         super(props)
-        console.log('inside constructor method');
+        console.log('inside constructor method 1');
         /* 1. initialize the state or data members
            2. to bind methods 
         */
@@ -12,13 +12,13 @@ class LifeCycleComponent extends React.Component {
         }
     }
     static getDerivedStateFromProps(props, state) {
-        console.log('inside getDerivedStateFromProps');
+        console.log('inside getDerivedStateFromProps 1');
         /* can return new state or return null */
         return null
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        console.log('inside shouldComponentUpdate');
+        console.log('inside shouldComponentUpdate 2');
         console.log(this.state);
         console.log(nextState);
         /* either return true or false
@@ -34,12 +34,12 @@ class LifeCycleComponent extends React.Component {
         }
     }
     getSnapshotBeforeUpdate(prevProps, prevState) {
-        console.log('inside getSnapshotBeforeUpdate');
+        console.log('inside getSnapshotBeforeUpdate 2');
         console.log(prevState);
         return 'this is before update'
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('inside componentDidUpdate');
+        console.log('inside componentDidUpdate 2');
         /* this method will be called once the 
         component is updated into the real dom
             1. API calls (side effects)
@@ -48,7 +48,7 @@ class LifeCycleComponent extends React.Component {
          */
     }
     componentWillUnmount() {
-        console.log('inside componentWillUnmount');
+        console.log('inside componentWillUnmount 3');
         /* unsubscribe to any third apis 
            clear any localstorage data/ sessionStorage
            clearInterval, clearTimeout
@@ -56,7 +56,7 @@ class LifeCycleComponent extends React.Component {
     }
     render() {
         /* Write the UI / JSX code */
-        console.log('inside render method');
+        console.log('inside render method 1');
         return <div>
             Hello - {this.state.userName}
             <button
@@ -79,7 +79,7 @@ class LifeCycleComponent extends React.Component {
         </div>
     }
     componentDidMount() {
-        console.log('inside componentDidMount');
+        console.log('inside componentDidMount 1');
         /* this method will be called once the 
         component is rendered into the real dom
             1. API calls (side effects)

@@ -8,7 +8,7 @@ function Login(props) {
 
   const login = (event) => {
       console.log(event);
-event.preventDefault()
+event.preventDefault() 
     console.log(useDetails);
     if(useDetails.email && useDetails.password){
         //programatically navigate

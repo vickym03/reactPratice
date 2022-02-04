@@ -21,8 +21,7 @@ function App() {
         
           <Route path="/home" render={(props) => {
               // return <Home userName="Jerry !" />;
-              return <
-              div> 
+              return <div> 
               <Home userName="Tommy" {...props}/>
               </div>
 

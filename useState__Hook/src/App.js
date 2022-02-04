@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
 import { PureClassComponent } from './Component/PureClassComponent';
-
 import{useState} from 'react';
 import UseStatePrimitive from './Component/UseStatePrimitive';
 import UseStateObject from './Component/UseStateObject';
 import UseStateArray from './Component/UseStateArray';
-
+import './App.css';
 
 
 function App() {

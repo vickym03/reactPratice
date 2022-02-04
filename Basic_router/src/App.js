@@ -22,8 +22,10 @@ function App() {
             exact={true}
             path="/"
             render={(props) => {
+              console.log(props);
               return "App Compoment";
-            }}
+            }
+            }
           />
           <Route path="/home" component={Home} />
           <Route exact={true} path="/contact" component={Contact} />

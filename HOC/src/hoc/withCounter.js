@@ -19,12 +19,19 @@ function withCounter(PassedComponent, initialCount = 0) {
       });
     };
 
+    resetCount = () => {
+      this.setState({
+        count: initialCount
+      });
+    };
+
     render() {
      
       return  <PassedComponent
           count={this.state.count}
           incrementCount={this.incrementCount}
           decrementCount={this.decrementCount}
+          resetCount={this.resetCount}
           /* props passed when component is called OR render*/
           {...this.props}
         />
@@ -35,3 +42,6 @@ function withCounter(PassedComponent, initialCount = 0) {
 }
 
 export default withCounter;
+
+
+

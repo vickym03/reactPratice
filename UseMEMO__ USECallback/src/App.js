@@ -6,7 +6,7 @@ import Counter from './usememo/Counter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
      <ParentComp/>
      <hr/>
      <Counter/>

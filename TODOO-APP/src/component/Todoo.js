@@ -78,6 +78,7 @@ function Todoo() {
             addTodo();
           }}
         >{" "}Add Todo</button>
+
       </div>
 
       <div>
@@ -90,6 +91,8 @@ function Todoo() {
                       todo.completed
                         ? {
                             textDecoration: "line-through",
+                            textDecorationColor:"red"
+            
                           }
                         : {}
                     }
@@ -99,9 +102,7 @@ function Todoo() {
                   <button
                     onClick={() => {
                       completeTodo(index);
-                    }}
-                  >
-                    {" "}
+                    }}>{" "}
                     Completed
                   </button>
                   <button

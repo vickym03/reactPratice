@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <div>
-          <nav style={{ backgroundColor: "yellowgreen" }}>
+ y         <nav style={{ backgroundColor: "yellowgreen" }}>
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
               <Link to="/">App</Link>
               <Link to="/home">Home</Link>

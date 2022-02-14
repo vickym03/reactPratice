@@ -10,6 +10,7 @@ function App() {
     <Router>
      
         <div className="App">
+
         <Test/>
           <div className="App-link">
             <Link to="/home">Home</Link>

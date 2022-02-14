@@ -6,6 +6,7 @@ function DataCount({count, text}) {
 
   {text}--{count}
   </div>;
+  
 }
 
 export default React.memo(DataCount);

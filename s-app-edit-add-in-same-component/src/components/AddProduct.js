@@ -14,6 +14,7 @@ function AddProduct(props) {
         productCopy[event.target.name] = event.target.value
         setproduct(productCopy)
     }
+    
     const addProduct = async () => {
         console.log(product);
         const url = 'https://ty-shop.herokuapp.com/api/products'

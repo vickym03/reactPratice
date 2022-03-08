@@ -2,7 +2,7 @@
 import './App.css';
 import { useReducer } from 'react'
 import MyCounter1 from './components/MyCounter1';
-import MyCounter2 from './components/MyCounter2';
+//import MyCounter2 from './components/MyCounter2';
 
 
 const initialState=0
@@ -12,7 +12,7 @@ const reducer=(state,action)=>{
   console.log('action',action);
 
   if(action=== 'increment'){
-    console.log('aa');
+    //console.log('aa');
     return state+10
   }else if(action==='decrement'){
     return state-10
@@ -35,7 +35,7 @@ function App() {
       <hr />
       <MyCounter1 />
       <hr />
-      <MyCounter2 />
+      {/*<MyCounter2 />*/}
 
     </div>
   );

@@ -32,3 +32,4 @@ export class Err1 extends Component {
 }
 
 export default Err1;
+
